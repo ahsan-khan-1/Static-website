@@ -1,0 +1,632 @@
+/*Header, Nav bar, hidden menu pop-up, white nav, second button black */
+
+header {
+  background-image: linear-gradient(rgb(18, 132, 167),black,darkblue);
+  padding: 2%;
+  border-radius: 25px 25px 25px 25px;
+  border: 2px white solid;
+}
+.clear-fix {
+  clear: both;
+  height: 0;
+}
+
+nav {
+  display: flex;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  color: white;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+div.nav_button input {
+  border-radius: 25px;
+  width: 70px;
+  height: 50px;
+  color: #FFF;
+  background-color: black;
+}
+
+div.nav_button {
+  margin-top: 12px;
+  display: flex;
+  margin-left: auto;
+}
+
+div.nav_button input:hover {
+  color: black;
+  background-color: white;
+}
+
+div.hidden-align {
+  display: flex;
+  justify-content: center;
+}
+
+div.hiddentext{
+  display: flex;
+  position: absolute;
+}
+
+table.hiddentext{
+  display: flex;
+  border: 3px solid white;
+  border-radius: 15px;
+  width: 200px;
+  height:fit-content;
+  background-color: rgb(48, 88, 137);
+  justify-content: center;
+}
+
+table.hiddentext a {
+  color:white;
+  font-size: 27px;
+}
+
+table.hiddentext td.hiddenMenu{
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+table.hiddentext td.hiddenMenu :hover{
+  color:black;
+  padding: 5px;
+  border: white 3px solid;
+  border-radius: 10px;
+  background-color: white;
+}
+
+table.hiddentext tr td{
+  text-align: center;
+}
+/* ^ I changed list into a table to get rid of the dots */
+
+/*hidden menu pop up, company dropdown, safety and help to new page, products new hidden pop up (may not do) */
+
+/*body Head, Logo image, button for driver and rider, bottom border and arrow hover animation, black page, white text*/
+
+/*color theme of the page*/
+body {
+  display: block;
+  background-image:linear-gradient(rgb(42, 52, 80),black);
+}
+
+.driver {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-bottom: -15%;
+  width: 60%;
+}
+
+div.main_button {
+  margin: 5%;
+  padding: 10%;
+
+}
+
+a.Body-link2,
+a.Body-link1 {
+  color: black;
+  font-size: 75px;
+  text-decoration: none;
+  border-bottom: 5px double #FFF;
+}
+
+div.main_button img {
+  position: absolute;
+  opacity: 0;
+  width: 10%;
+}
+
+a.Body-link2 {
+  float: right;
+}
+
+a.Body-link1 {
+  float: left;
+}
+a.Body-link1:hover
+img.test{
+opacity: 1;
+}
+
+a.Body-link2:hover
+img.test2{
+opacity: 1;
+}
+
+a.Body-link2:hover,
+a.Body-link1:hover,
+div.main_button img:hover {
+  animation: InfoButton 20s infinite;
+}
+
+@keyframes InfoButton {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+
+  15% {
+    color: #CEE3E2;
+  }
+
+  50% {
+    color: #60766f;
+  }
+
+  100% {
+    color: #f2efef;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
+
+/*footer table,bottom has closer, make white*/
+footer {
+  font-weight: 100;
+  background-image: linear-gradient(rgb(27, 59, 97),rgb(6, 40, 82), rgb(27, 59, 97));
+  font-size: 19px;
+  padding: 30px;
+  border-radius: 25px 25px 25px 25px;;
+  border: 2px white solid;
+}
+
+h3 {
+  font-size: 370%;
+  font-weight: 400px;
+  overflow: visible;
+  font-weight: 100;
+}
+
+a.link1 {
+  margin: 0;
+  padding: 0;
+  font-size: 180%;
+  color: white;
+  text-align: center;
+
+}
+a.link1:hover {
+  color: white;
+  background-color: grey;
+  background-blend-mode:color;
+  border-style: double;
+}
+
+footer h3 {
+  color: white;
+  border: solid 2px white;
+  border-radius: 15px;
+  font-weight: 500;
+  background-image: linear-gradient(darkblue,black, rgb(18, 132, 167));
+}
+
+/* tables*/
+div.allTables{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: transform .2s;
+}
+
+table.table1 {
+  margin-top: 5%;
+  text-align: center;
+  border: rgb(255, 255, 255);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  background-color: none;
+  border-radius: 25px;
+}
+
+table.table1 th,
+table.table1 td {
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+}
+
+table.table1 th {
+  font-size: 200%;
+}
+
+table.table1 td {
+  font-size: 150%;
+}
+
+table.table2 {
+  margin-top: 5%;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  border-radius: 25px;
+}
+
+table.table2 th,
+table.table2 td {
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+}
+
+table.table2 th {
+  font-size: 200%;
+}
+
+table.table2 td {
+  font-size: 150%;
+}
+
+table.table3 {
+  margin-top: 5%;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  border-radius: 25px;
+}
+
+table.table3 th,
+table.table3 td {
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+}
+
+table.table3 th {
+  font-size: 200%;
+}
+
+table.table3 td {
+  font-size: 150%;
+}
+
+table.table4 {
+  margin-top: 5%;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  border-radius: 25px;
+}
+
+table.table4 th,
+table.table4 td {
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+}
+
+table.table4 th {
+  font-size: 200%;
+}
+
+table.table4 td {
+  font-size: 150%;
+}
+
+table tr td{
+  transition: transform 0.4s;
+}
+
+.table1 tr td:hover{
+  transform: scale(1.02);
+  background-color: rgb(222, 222, 222);
+  border-radius: 15px;
+  border: 1px solid black;
+  color: #120f0f;
+}
+
+.table2 tr td:hover{
+  transform: scale(1.02);
+  background-color: rgb(222, 222, 222);
+  border-radius: 15px;
+  color: #120f0f;
+  border: 1px solid black;
+}
+
+.table3 tr td:hover{
+  transform: scale(1.02);
+  background-color: rgb(222, 222, 222);
+  border-radius: 15px;
+  border: 1px solid black;
+  color: #120f0f;
+}
+
+.table4 tr td:hover{
+  transform: scale(1.02);
+  background-color: rgb(222, 222, 222);
+  border-radius: 15px;
+  border: 1px solid black;
+  color: #120f0f;
+}
+/*all table stuff end*/
+
+/*icons*/
+img.Social_Icon {
+  display: inline-block;
+  margin-top: 3%;
+  width: 6%;
+}
+
+.pictures{
+  transition: transform 0.4s;
+}
+
+.pictures :hover{
+  transform: scale(1.2);
+}
+
+div.right{
+  text-align: center;
+  color:white;
+}
+/* ABOUT*/
+.prev, .next {
+  margin: 15px;
+  padding: 16px;
+  color:white;
+  font-weight: 900px;
+  font-size: 50px;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev{
+  float: left;
+}
+.next {
+float: right;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+div.hovering :hover{
+  background-color: grey;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.about_details{
+  font-size: 200%;
+}
+
+.Next_Slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;   
+}
+
+body h1{
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.driver_about {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  margin-top: -5%;
+  width: 30%;
+}
+.about_Section{
+  overflow: visible;
+}
+
+/*form display in drivers and riders page*/
+fieldset.mainField{
+  background-color:  rgb(151, 177, 209);
+  border: solid 7px rgb(18, 132, 167);
+  border-radius: 20px;
+}
+
+/*boxes design where users will input*/
+form.form1 input[type="text"], input[type="number"], input[type="date"], input[type="email"] {
+  border-radius: 5px;
+  height: 30px;
+  min-width: 370px;
+  background-color: rgb(239, 236, 236);
+}
+
+/*design "submit" button and "reset" button */
+
+form button[type = "submit"], [type = "reset"]{
+  background-color: black;
+  color: white;
+  display: block;
+  height: 50px;
+  width: 140px;
+  margin: 20px auto;
+  border: 2px solid;
+  transition: transform 0.4s;
+  border-radius: 15px;
+}
+
+form button [type = "submit"], [type = "reset"]:hover{
+  transform: scale(1.2);
+  background-color: darkblue;
+  border-radius: 15px;
+}
+
+/*footer */
+fieldset.followUs {
+  border-radius: 15px;
+  background-color: rgb(214, 214, 214);
+}
+p.lastStuff {
+  color: white;
+}
+
+/*align content when screen gets shorter*/
+@media only screen and (max-width: 800px) {
+  div.allTables{
+    justify-content: center;
+  }
+  div.alignment{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  form.form1{
+    text-align: left;
+    justify-content:space-evenly;
+  }
+  html{
+    width:fit-content;
+  }
+  table.table1, table.table2, table.table3, table.table4{
+    border: white 5px solid;
+    background-color: rgb(48, 88, 137);
+  }
+  div.alignment{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-decoration: none;
+  }
+
+div [value="Sign up"], [value="Log in"]{
+  display: none;
+  visibility: hidden;
+}
+
+table.hiddentext td.hiddenMenu2{
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  
+}
+
+table.hiddentext td.hiddenMenu2 :hover{
+  color:black;
+  padding: 5px;
+  border: white 3px solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
+table.hiddentext a {
+  font-size: 23px;
+}
+}
+
+@media only screen and (min-width: 600px){
+  a.navsearch{
+    display: none;
+  } 
+}
+
+/*this is for how the form on rider, driver page will be displayed (undecided)*/
+form.form1 div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+fieldset.address, .userInfo, .contactInfo, .paymentMethod{
+  max-height: 420px;
+  color:black;
+  width: 46%;
+  background-image:linear-gradient( rgb(151, 177, 209), rgb(143, 190, 249));
+  margin: 5px;
+  border-radius: 15px;
+  border: 5px white solid;
+}
+
+a{
+  text-decoration:none;
+}
+
+img{
+  text-decoration: none;
+}
+
+/*Fonts*/
+
+h2,h3{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2.aboutUs{
+  font-size: 60px;
+  color:white;
+}
+
+table td{
+  font-family: 'Playfair Display', serif;
+}
+
+table th{
+  font-family: 'Montserrat', sans-serif ;
+}
+
+table.table1, table.table2, table.table3, table.table4 tr{
+  color:white;
+}
+
+p.about_details{
+  color:white;
+}
+
+h3.about_Section{
+  color:white;
+}
+
+a.Body-link1{
+  color:white;
+}
+
+a.Body-link2{
+  color:white;
+}

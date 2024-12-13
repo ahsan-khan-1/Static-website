@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Rebu</title>
+    <link rel="icon" href="images/rebu_icon.png">
+    <link rel="stylesheet" href="styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header, Nav bar, hidden menu pop-up, white nav, second button black -->
+    <header>
+        <nav>
+            <h1>Rebu</h1>  
+                <div class="nav_button">
+                    <input type="button" name="login" id="login" value="Log in" onclick="">
+                    <input type="button" name="signup " id="signup" value="Sign up" onclick="">
+                    <div class="clear-fix"></div>
+                    <div class="hidden">
+                        <input type="button" name="menu" id="openMenu" value="&#9776;" onclick="openMore()">
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <!-- hidden button/ hidden text -->
+    <br><br>
+
+    <div class="hidden-align" ID="moreInfo" STYLE="display:none" >
+        <div class="hiddentext">
+            <table class = "hiddentext">
+                <tr>
+                    <td class="hiddenMenu"><a href="index.html" class="hiddenMenu" >Home</a></td>
+                </tr>
+                <tr>
+                    <td class="hiddenMenu"><a href="about.html" class="hiddenMenu" >About Us</a></td>
+                </tr>
+                <tr>
+                    <td class="hiddenMenu"><a href="driver.html" class="hiddenMenu" >Driver</a></td>
+                </tr>
+                <tr>
+                    <td class="hiddenMenu2"><a href="" class="navsearch">Sign up</a></td>
+                </tr>
+                <tr>
+                    <td class="hiddenMenu2"><a href="" class="navsearch">Log in</a></td>
+                </tr>                
+            </table>
+        </div>
+    </div>
+    
+    <h3 align="center">Complete Your Rider Profile!</h3>
+    <fieldset class="mainField">
+        <div align="center" style="font-family: 'Playfair Display', serif"><font size="+4"><strong>Profile Information:</strong></font></div><br>
+     <form class="form1" ><div>
+         <fieldset class="userInfo">
+             <legend><font size="+2">User Info</font></legend>
+             <label for="firstName"><font size="+2">First name </font></label><br>
+             <input type="text" id="firstName" name="firstName" required ><br><br>
+             <label for="lastName"><font size="+2">Last name</font></label><br>
+             <input type="text" id="lastName" name="lastName" required><br><br>
+             <fieldset>
+                 <legend><font size="+2">Gender</font></legend>
+                     <label for="gender-male" ><font size="+1">Male</font><e/label>
+                     <input type="radio" id="gender-male" name="gender" required><br><br>
+                     <label for="gender-female"><font size="+1">Female</font></label>
+                     <input type="radio" id="gender-female" name="gender" required><br><br>
+                     <label for="neither"><font size="+1">Niether</font></label>
+                     <input type="radio" id="neither" name="gender" required><br><br>
+             </fieldset>
+         </fieldset>
+         <br>
+         <fieldset class="address">  
+             <legend><font size="+2">Address</font></legend>
+                 <label for="streetNumber"><font size="+2">Street number</font></label><br>
+                 <input type="number" id="streetNumber" name="streetNumber" min="1" required><br><br>
+                 <label for="streetName"><font size="+2">Street name</font></label><br>
+                 <input type="text" id="streetName" name="streetName" required><br><br>
+                 <label for="postalCode"><font size="+2">Postal code</font></label><br>
+                 <input type="text" id="postalCode" name="postalCode" required><br><br>
+                 <label for="city"><font size="+2">City</font></label><br>
+                 <input type="text" id="city" name="city" required><br><br>
+                 <label for="province"><font size="+2">Province</font></label><br>
+                 <input type="text" id="province" name="province" required><br><br>      
+         </fieldset>
+         <br>
+         <fieldset class="contactInfo">
+             <legend><font size="+2">Contact Info</font></legend>
+             <label for="phoneNumber"><font size="+2">Phone number</font></label><br>
+             <input type="number" id="phoneNumber" name="phoneNumber" required><br><br>
+             <label for="email"><font size="+2">Email</font></label><br>
+             <input type="email" id="email" name="email" required><br><br>
+         </fieldset>
+         <br>
+         <fieldset class="paymentMethod">
+             <legend><font size="+2">Payment Method</font></legend>
+                 <label for="cardName"><font size="+2">Name on card</font></label><br>
+                 <input type="text" id="cardName" name="cardName" required><br><br>
+                 <label for="cardNumber"><font size="+2">Credit Card or Debit Card number</font></label><br>
+                 <input type="number" id="cardNumber" name="cardNumber" required><br><br>
+                 <label for="cardDate"><font size="+2">Credit Card or Debit Card expiry date</font></label><br>
+                 <input type="date" id="cardDate" name="cardDate" required><br><br>
+         </fieldset>
+        </div>
+        <button type="reset" align="center">RESET</button>
+        <button type="reset" align="center">SUBMIT</button>
+    </form>
+    
+
+</fieldset>
+    <br>
+    <div class="clear-fix"></div>
+    <!-- footer table,bottom has closer, make white-->
+    <footer>
+        <h3 align="center" class="exploreRebu">Explore Rebu</h3>
+        <div class="allTables">
+        <table class="table1">
+            <tr>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>About us</td>
+            </tr>
+            <tr>
+                <td>Our offerings</td>
+            </tr>
+            <tr>
+                <td>Newsroom</td>
+            </tr>
+            <tr>
+                <td>Investors</td>
+            </tr>
+            <tr>
+                <td>Blog</td>
+            </tr>
+            <tr>
+                <td>Careers</td>
+            </tr>
+        </table>
+        
+        <table class="table2">
+            <tr>
+                <th>Products</th>
+            </tr>
+            <tr>
+                <td>Ride</td>
+            </tr>
+            <tr>
+                <td>Drive</td>
+            </tr>
+            <tr>
+                <td>Deliver</td>
+            </tr>
+            <tr>
+                <td>Eat</td>
+            </tr>
+            <tr>
+                <td>Rebu for Business</td>
+            </tr>
+            <tr>
+                <td>Rebu Freight</td>
+            </tr>
+        </table>
+        
+        <table class="table3">
+            <tr>
+                <th>Global citizenship</th>
+            </tr>
+            <tr>
+                <td>Safety</td>
+            </tr>
+            <tr>
+                <td>Diversity and Inclusion</td>
+            </tr>
+        </table>
+
+        <table class="table4">
+            <tr>
+                <th>Travel</th>
+            </tr>
+            <tr>
+               <td class="hover">Airports</td>
+            </tr>
+            <tr>
+                <td>Cities</td>
+            </tr>
+        </table>
+        </div>
+        <br><br>
+        <div align="center">
+        <a href="https://hackertyper.com/" class="link1" >Visit Help Center</a>
+        </div>
+        <br><br>
+        <div class="clear-fix"></div>
+        <fieldset class="followUs">
+            <p align="center"style="font-family:  'Montserrat', sans-serif;"><font size="+3">Follow Us</font></p>
+            <div class="end_footer" align="center" >
+                <a href="https://www.facebook.com/" class="pictures" target="a_blank"><img src="images/social_Icon/facebook.png" alt="Social Icon Facebook" class="Social_Icon" /></a> &#160; &#160;
+                <a href="https://www.instagram.com/" class="pictures" target="a_blank"><img src="images/social_Icon/instagram.png" alt="Social Icon instagram" class="Social_Icon" /></a> &#160; &#160;
+                <a href="https://www.twitter.com/" class="pictures" target="a_blank"><img src="images/social_Icon/twitter.png" alt="Social Icon twitter" class="Social_Icon" /></a> &#160; &#160;
+                <a href="https://www.whatsapp.com/" class="pictures" target="a_blank"><img src="images/social_Icon/whatsapp.png" alt="Social Icon whatsapp" class="Social_Icon" /></a> &#160; &#160;
+                <a href="https://www.tiktok.com/" class="pictures" target="a_blank"><img src="images/social_Icon/tiktok.png" alt="Social Icon tiktok" class="Social_Icon" /></a> &#160; &#160;
+            </fieldset>
+            <br>
+            <p align="center" class="lastStuff"><font size="+2"><strong>
+            Made By: Tomas Albrechtas & Ahsan Khan
+            </strong></font></p>
+            <div class="right">Copyright <strong>&copy</strong> 2022.</div>
+        </div>
+        
+        <div class="clear-fix"></div>
+    </footer>
+
+</body>
+<script>
+   
+    function openMore() {
+        var moreInfo = document.getElementById('moreInfo');
+        if (moreInfo.style.display == 'none'){
+            moreInfo.style.display = '';
+        } else {
+            moreInfo.style.display = 'none';
+        }
+    };
+
+</script>
+
+</html>
+
+
